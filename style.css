@@ -6,46 +6,19 @@
 
 h1 {
   font-family: "Nunito", sans-serif;
-  padding: 0px;
-  margin-bottom: 0px;
-  z-index: 10;
-}
-
-h3 {
-  z-index: 10;
-}
-
-p {
-  z-index: 10;
-  font-size: 20px;
+  padding: 20px;
 }
 
 .page1 {
   background: url("background.png");
   color: #262224;
   height: 100vh;
-  /* background-repeat: no-repeat; */
   background-attachment: fixed;
   background-position: left;
   position: relative;
 }
 
-.page1 h1 {
-  padding: 20px;
-  z-index: 10;
-}
-.brand {
-  padding-left: 10px;
-}
-
-.page1 h2 {
-  position: absolute;
-  bottom: -10px;
-  right: 30px;
-  z-index: 10;
-}
-
-.page1 .container {
+.container {
   text-align: center;
 }
 
@@ -94,7 +67,8 @@ p {
   transform: skew(-2deg, 0);
 }
 
-.label {
+.label,
+.label1 {
   font-family: "Nunito", sans-serif;
   font-size: 30px;
   background: transparent;
@@ -106,137 +80,41 @@ p {
   );
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
-  transform: skew(-2deg, 0);
   border-radius: 2px 1px;
+}
+.label {
+  transform: skew(-2deg, 0);
 }
 
 .label1 {
-  font-family: "Nunito", sans-serif;
-  font-size: 30px;
-  background: transparent;
-  background-image: linear-gradient(
-    to right,
-    rgba(6, 224, 230, 0.8),
-    rgb(6, 224, 230, 0.7) 90%,
-    rgb(6, 224, 230, 0.8)
-  );
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
   transform: skew(0, -2deg);
-  border-radius: 2px 1px;
 }
-
-.enter-website {
-  margin: 30px 0px;
-}
-
-.enter-website a {
-  text-decoration: none;
-  color: white !important;
-}
-
-.enter-website a:hover {
-  color: #9086de !important;
-}
-
-/* mailchimp signup */
-#mc_embed_signup {
-  border: none;
-  text-align: center;
-  width: 100%;
-} /* Signup form container */
-
-.mc-field-group {
-  display: inline-block;
-  color: white;
-} /* positions input field horizontally */
-
-#mce-EMAIL {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1em;
-  border: none;
-  color: white;
-  background-color: rgba(255, 255, 255, 0.349);
-  padding: 0.7em 9em 0.7em 1em;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  display: inline-block;
-  margin: 0;
-} /* Input Styles */
-
-.clear {
-  display: inline-block;
-} /* positions button horizontally in line with input */
-
-.button {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1em;
-  letter-spacing: 0.03em;
-  color: black;
-  background-color: white;
-  padding: 0.7em 2em;
-  border: 2px solid white;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  display: inline-block;
-  margin: 0;
-} /* Button Styles */
-
-:-webkit-input-placeholder {
-  color: #ffff;
-} /* WebKit browsers */
-:-moz-placeholder {
-  color: #ffff;
-} /* Mozilla Firefox 4 to 18 */
-::-moz-placeholder {
-  color: #ffff;
-} /* Mozilla Firefox 19+ */
-:-ms-input-placeholder {
-  color: #ffff;
-} /* Internet Explorer 10+ */
 
 @media (max-width: 768px) {
-  /* positions input field and button underneath each other with 100% width for tablet and mobile */
-
-  .mc-field-group {
-    display: block;
-    max-width: 100%;
+  .container {
+    background-color: rgba(0, 0, 0, 0.65);
+  }
+  h1 {
+    color: white;
+  }
+  .page1 {
+    background-size: contain;
   }
 
-  #mce-EMAIL {
-    padding: 0.7em 0 0.7em 1em;
-    width: 96%;
-    margin: 0;
-  }
-  .clear {
-    display: block;
-    width: 100%;
-  }
-  .button {
-    width: 100%;
-    margin: 0.5em 0 0 0;
+  .time,
+  .time1 {
+    font-size: 30px;
+    margin-left: 0px;
   }
 
-  ul {
-    padding-left: 0rem;
+  .label,
+  .label1 {
+    font-size: 10px;
   }
 
   #countdown li span {
-    padding: 0px;
-  }
-  .page1 h2 {
-    position: relative;
-    right: 0px;
-    padding-left: 10px;
-  }
-
-  .page1 h1 {
     padding: 10px;
-  }
-
-  .row > * {
-    padding-right: calc(var(--bs-gutter-x) / 0);
+    margin: 0px;
   }
 }
+
