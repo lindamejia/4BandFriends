@@ -80,6 +80,36 @@ h1 {
   right: 5%;
 }
 
+#content {
+  display: none;
+  text-align: center;
+  top: 30%;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(254, 71, 255);
+}
+
+a.button1 {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid rgb(254, 71, 255);
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.3em;
+  box-sizing: border-box;
+  /* font-family: "Roboto", sans-serif; */
+  font-weight: 300;
+  color: rgb(254, 71, 255);
+  text-align: center;
+  transition: all 0.2s;
+  font-size: 2em;
+}
+a.button1:hover {
+  color: rgb(6, 243, 254);
+  border: 0.1em solid rgb(6, 243, 254);
+}
+
 @media (max-width: 768px) {
   .page1 {
     background: url("bg-mobile.jpg");
@@ -90,19 +120,19 @@ h1 {
   .subscribe {
     overflow: hidden;
     right: auto;
-    left:11%;
-    top:79%;
-    margin:30px 0px;
+    left: 11%;
+    top: 79%;
+    margin: 30px 0px;
   }
 
-  iframe{
-    width:auto;
+  iframe {
+    width: auto;
   }
 
   .container {
     background-color: rgba(0, 0, 0, 0.65);
     right: 0;
-    top:120%;
+    top: 120%;
   }
   h1 {
     color: white;
@@ -126,8 +156,22 @@ h1 {
     padding: 10px;
     margin: 0px;
   }
-  .row{
-    margin-bottom:50px;
+  .row {
+    margin-bottom: 50px;
+  }
+
+  #content {
+    top: 79%;
+    color: white;
+    height: 400px;
+  }
+
+  small {
+    padding-bottom: 400px;
+  }
+
+  a.button1 {
+    margin: 0.5em auto;
   }
 }
 
