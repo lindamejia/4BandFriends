@@ -11,15 +11,33 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
         integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
         crossorigin="anonymous"></script>
-    <link rel="icon" href="/4bandfriends/favicon.ico"/>
-    <link rel="stylesheet" type="text/css" href="/4bandfriends/style.css" />
-
+    <link rel="icon" href="/4bandfriends/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '246520510390577');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=246520510390577&ev=PageView&noscript=1" /></noscript>
+    <!-- End Facebook Pixel Code -->
     <title>4B and Friends</title>
 </head>
 
 <body>
     <div class="page1">
-        <div class="subscribe">
+        <div class="subscribe" id="laylo">
             <iframe src="https://laylo.com/dj4b/2nfNT/embed" width="540" height="580" frameborder="0" scrolling="no"
                 allowtransparency="true"> </iframe>
         </div>
@@ -41,8 +59,16 @@
                     </li>
                 </ul>
             </div>
+
         </div>
-        
+        <div class=container id="content">
+            <a href="something" class="button1">Click Here for Tickets</a>
+            <h1>4B & Friends Miami</h1>
+            <h3>March 24, 2022</h3>
+            <h5><a href="https://lerougemiami.com/">Le Rouge</a></h5>
+            <small>318 NW 23rd St. Miami, FL 33128</small>
+        </div>
+
     </div>
 
 
@@ -81,8 +107,10 @@
                         let headline = document.getElementById("headline"),
                             countdown = document.getElementById("countdown"),
                             content = document.getElementById("content");
+                        laylo = document.getElementById("laylo");
                         headline.style.display = "none";
                         countdown.style.display = "none";
+                        laylo.style.display = "none";
                         content.style.display = "block";
                         clearInterval(x);
                     }
