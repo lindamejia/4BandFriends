@@ -91,7 +91,7 @@ h1 {
     overflow: hidden;
     right: auto;
     left:11%;
-    top:80%;
+    top:70%;
     margin-bottom:30px;
   }
 
@@ -102,8 +102,7 @@ h1 {
   .container {
     background-color: rgba(0, 0, 0, 0.65);
     right: 0;
-    top: 100%;
-    margin-top:20px;
+    top:100%;
   }
   h1 {
     color: white;
@@ -128,7 +127,7 @@ h1 {
     margin: 0px;
   }
   .row{
-    margin-bottom:100px;
+    margin-bottom:50px;
   }
 }
 
