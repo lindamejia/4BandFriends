@@ -89,10 +89,10 @@ h1 {
 
   .subscribe {
     overflow: hidden;
-    bottom: 0;
     right: auto;
     left:11%;
     top:70%;
+    margin-bottom:30px;
   }
 
   iframe{
