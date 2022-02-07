@@ -86,6 +86,7 @@ h1 {
     background-repeat: repeat;
     overflow: scroll;
   }
+
   .subscribe {
     overflow: hidden;
     bottom: 0;
@@ -125,6 +126,9 @@ h1 {
   #countdown li span {
     padding: 10px;
     margin: 0px;
+  }
+  .row{
+    margin-bottom:100px;
   }
 }
 
