@@ -23,7 +23,7 @@ h1 {
 .container {
   position: absolute;
   top: 50%;
-  right: -20%;
+  right: -25%;
 }
 #headline{
   color:White;
@@ -84,7 +84,7 @@ h1 {
 #content {
   display: none;
   text-align: center;
-  top: 30%;
+  top: 50%;
 }
 
 a {
@@ -94,20 +94,20 @@ a {
 a.button1 {
   display: inline-block;
   padding: 0.35em 1.2em;
-  border: 0.1em solid rgb(254, 71, 255);
+  border: 0.1em solid #FFDA8F;
   margin: 0 0.3em 0.3em 0;
   border-radius: 0.3em;
   box-sizing: border-box;
-  /* font-family: "Roboto", sans-serif; */
   font-weight: 300;
-  color: rgb(254, 71, 255);
+  color: #FFDA8F;
   text-align: center;
   transition: all 0.2s;
   font-size: 2em;
+  text-decoration: none;
 }
 a.button1:hover {
-  color: rgb(6, 243, 254);
-  border: 0.1em solid rgb(6, 243, 254);
+  color: white;
+  border: 0.1em solid white;
 }
 
 @media (max-width: 768px) {
@@ -132,7 +132,7 @@ a.button1:hover {
   .container {
     background-color: rgba(0, 0, 0, 0.65);
     right: 0;
-    top: 120%;
+    top: 150%;
   }
   h1 {
     color: white;
@@ -161,9 +161,9 @@ a.button1:hover {
   }
 
   #content {
-    top: 79%;
+    top: 100%;
     color: white;
-    height: 400px;
+    /* height: 400px; */
   }
 
   small {
@@ -177,7 +177,7 @@ a.button1:hover {
 
 @media screen and (min-width: 1920px) {
   .container {
-    right: -9%;
+    right: -13%;
   }
   .subscribe {
     bottom: -20%;
